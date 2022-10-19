@@ -7,6 +7,7 @@ function Messages() {
     <div className="Messages">
         <h1> Message Page </h1>
         <SearchBar></SearchBar>
+        <br></br>
         <MessageCard
           img="/resowLogo.png"
           name="user x"
