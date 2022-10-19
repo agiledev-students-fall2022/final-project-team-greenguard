@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import './Message.css'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -10,13 +11,15 @@ export default function Message(props) {
   return (
     <Card sx={{
       display: "flex",
-      width: { xs: 0.9, sm: 0.75, md: 0.5 }
+      // width: { xs: 0.9, sm: 0.75, md: 0.5 }
+      width: '100%'
     }} >
       <Box
         component="img"
         sx={{
           height: 233,
-          width: 350,
+          // width: 350,
+          width: '25%',
           maxHeight: { xs: 100, md: 150 },
           maxWidth: { xs: 100, md: 150 },
           mt: "auto",
@@ -25,7 +28,7 @@ export default function Message(props) {
         alt="Image of the good"
         src={props.img}
       />
-      <Box sx={{ display: 'flex', flexDirection: 'column', width: 1, align: "right" }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', width: '75%', align: "right" }}>
         <CardContent sx={{ flex: '1 0 auto' }}>
           <Box sx={{ display: 'grid', gap: 0, gridTemplateColumns: 'repeat(2, 1fr)' }}>
             <Typography component="div" variant="body1" align="left">
