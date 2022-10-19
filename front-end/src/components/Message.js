@@ -38,7 +38,7 @@ export default function Message(props) {
               {props.date}
             </Typography>
           </Box>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
+          <Typography variant="subtitle1" color="text.secondary" component="div" align='left'>
             {props.message}
           </Typography>
         </CardContent>
