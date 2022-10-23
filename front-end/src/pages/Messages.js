@@ -27,7 +27,6 @@ function Messages() {
 
   return (
     <div className="Messages">
-        <h1> Message Page </h1>
         <SearchBar></SearchBar>
         <br></br>
 
@@ -40,70 +39,6 @@ function Messages() {
           />
         ))}
 
-
-      {/* renderMessage() */}
-
-        {/* render(){
-          return(
-            <div>
-            <MessageCard
-              img="/resowLogo.png"
-              name="user x"
-              date="mm.dd.yyyy"
-              message="when are you coming to pick the bunnie rabbits"
-            />
-           </div>
-          )
-        } */}
-        
-
-        {/* render: function () {
-          
-          let rows = [], i = 0, len = 10;
-          while (++i <= len) rows.push(i);
-
-          return (
-            <tbody>
-              {rows.map(function (i) {
-                return <ObjectRow key={i} index={i} />;
-              })}
-            </tbody>
-          );
-        } */}
-
-
-        {/* render() {
-          return (
-            <div>
-              {(() => {
-                let rows = []
-                numrows = 10
-                for (let i = 0; i < numrows; i++) {
-                  rows.push(<MessageCard key={i} 
-                  img="/resowLogo.png"
-                  name="user x"
-                  date="mm.dd.yyyy"
-                  message="when are you coming to pick the bunnie rabbits"/>)
-                }
-                return {rows};
-              })()}
-            </div>
-          );
-        } */}
-
-        {/* render() {
-          return (
-            <tbody>
-              {(() => {
-                const rows = [];
-                for (let i = 0; i < objectRows.length; i++) {
-                  rows.push(<ObjectRow key={i} data={objectRows[i]} />);
-                }
-                return rows;
-              })()}
-            </tbody>
-          );
-        } */}
         <Link to = "/User#?ChatInbox"> ChatInbox </Link>
     </div>
   );
