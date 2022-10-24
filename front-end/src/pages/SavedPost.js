@@ -1,15 +1,46 @@
 import { Link } from "react-router-dom";
 
 import SearchBar from '../components/SearchBar';
-import MessageCard from '../components/Message'
-import axios from "axios"
+import PostCard from '../components/Post';
+import axios from "axios";
 import { useEffect,useState } from 'react';
 
 function SavedPost() {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+
+    async function fetchData() {
+
+      const result = await axios(
+        "https://my.api.mockaroo.com/posts.json?key=23fbddd0"
+      );
+
+      setData(result.data);
+    }
+
+    fetchData();
+  }, []);
+
     return (
-      <div className="SavedPost">
-          <h1> Saved Post Page </h1>
-      </div>
+      <>
+      <section className="SavedPost">
+        <br></br>
+        <SearchBar></SearchBar>
+        <br></br>
+        { data && data.map((item) => (
+          <PostCard 
+            key={item.id}  
+            img= {item.img}
+            postTitle={item.postTitle}
+            time={item.time}
+            message={item.message}
+            name={item.name}
+          />
+        ))}
+      </section>
+    </>
     );
   }
   
