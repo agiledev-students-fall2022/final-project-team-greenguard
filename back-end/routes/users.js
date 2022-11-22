@@ -96,9 +96,6 @@ router.post('/login', async (req,res, )=> {
             message: "Logged in successfully", 
             token: "Bearer " + accessToken
         })
-
-        //res.cookie("acces-token", accessToken, {maxAge: 60*60*24*30*1000})
-        //res.json(user)
     }
     catch (err) {
         //next(err)
