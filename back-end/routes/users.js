@@ -39,7 +39,13 @@ router.post('/register', async (req,res)=> {
 
         if(!user){
             const savedUser = await newuser.save()
+
+            const payload = {
+                id: savedUser._id, 
+                emailID: savedUser.emailID
+            }
             const accessToken = jwt.sign(payload, jwtOptions.secretOrKey, {expiresIn: "7d"})
+
             res.send({
                 success: true,
                 message: "User created successfully", 
