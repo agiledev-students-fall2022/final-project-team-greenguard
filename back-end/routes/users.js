@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 
  //route for adding a new user (user registration page)
 router.post('/register', async (req,res)=> {
-    const user = new User({
+    const newuser = new User({
         fullname: req.body.fullname,
         emailID: req.body.emailID,
         password: req.body.password,   //hash the password
@@ -31,20 +31,28 @@ router.post('/register', async (req,res)=> {
         img: req.body.img //this one can be removed from this section
     });
 
-    //jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
-
     try {
 
-        //check here if the user exists already - if exists then throw error
-        const savedUser = await user.save()
-        res.send({
-            success: true, 
-            message: "User created successfully", 
-            user: {
-                id: savedUser._id, 
-                emailID: savedUser.emailID
+        //check if the user exists with the same email or not 
+        const user = await User.findOne({emailID: req.body.emailID})
+        console.log(req.body.emailID)
+
+        if(!user){
+            const savedUser = await newuser.save()
+            res.send({
+                success: true, 
+                message: "User created successfully", 
+                newuser: {
+                    id: savedUser._id, 
+                    emailID: savedUser.emailID
+                }
+             })
+        }
+        else{
+            if(user.emailID == req.body.emailID) {
+                throw new Error("An account already exists with the same email")
             }
-        })
+        }    
     }
     catch (err) {
         res.send({
