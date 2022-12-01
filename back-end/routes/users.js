@@ -65,6 +65,7 @@ router.post('/register', async (req,res)=> {
     }
 })
 
+
 //login router to check if the entered details are correct or not (Log In Page) - AUTHORIZATION and AUTHENTICATION
 router.post('/login', async (req,res, )=> {
 
