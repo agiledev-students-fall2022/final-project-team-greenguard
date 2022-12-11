@@ -1,20 +1,24 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8742764&assignment_repo_type=AssignmentRepo)
-# Project Repository
 
-This repository will be used for team projects.
+# Project Re-Sow
 
-Several sets of instructions are included in this repository. They should each be treated as separate assignments with their own due dates and sets of requirements.
+## Product Vision Statement
+To help eliminate waste of all kinds and connect people through shared resources.
 
-1. See the [App Map & Wireframes](instructions-0a-app-map-wireframes.md) and [Prototyping](./instructions-0b-prototyping.md) instructions for the requirements of the initial user experience design of the app.
+## Team Members:
+- [Minwu Kim](https://github.com/minwukim)
+- [Tasnim Ahmed](https://github.com/tasnimahmed11)
+- [Sachin Iyer](https://github.com/sachiniyer)
+- [Jacob Baum](https://github.com/JacobLBaum)
+- [Bhavicka Mohta](https://github.com/vicka1228)
 
-1. Delete the contents of this file and replace with the contents of a proper README.md, as described in the [project setup instructions](./instructions-0c-project-setup.md)
 
-1. See the [Sprint Planning instructions](instructions-0d-sprint-planning.md) for the requirements of Sprint Planning for each Sprint.
+## A Short History of How the Project Came to be
+  In the fast moving life that many people live today, it is easy to throw away perfectly good resources of all kinds just because the effort of finding the right home is hard or infeasible. From food to housewares, a huge amount of waste occurs for products that are still perfectly able to be reused or redistributed, if only there were a real time solution to connect people with need and those with excess.
 
-1. See the [Front-End Development instructions](./instructions-1-front-end.md) for the requirements of the initial Front-End Development.
+  The ***Re-Sow*** project seeks to solve this problem by presenting a solution for people to connect with others nearby to better distribute the great excess that leads to waste that occurs everyday. Re-Sow will allow people with excess resources to post their excess with their location to invite others nearby to take their excess off their hands. This brings a new waste disposal solution into the hands of everyday consumers as they have a sustainable alternative to throwing away useful excess.
 
-1. See the [Back-End Development instructions](./instructions-2-back-end.md) for the requirements of the initial Back-End Development.
+  Curious about the title ***Re-Sow***? The name is derived by combining the word ***Resource*** and ***Sow***
 
-1. See the [Database Integration instructions](./instructions-3-database.md) for the requirements of integrating a database into the back-end.
-
-1. See the [Deployment instructions](./instructions-4-deployment.md) for the requirements of deploying an app.
+  ## How To Contribute to the file
+Please check [CONTRIBUTING.md](./CONTRIBUTING.md)
